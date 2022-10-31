@@ -1,8 +1,7 @@
-import { Button } from '@mantine/core';
 import Head from 'next/head';
 import Image from 'next/image';
 import About from '../components/About';
-import Nav from '../components/Nav';
+import Navbar from '../components/Navbar';
 export default function Home() {
   return (
     <div>
@@ -12,8 +11,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <div className='text-sky-500'>Hello</div>
-      <Button> Hello </Button>
-      <Nav></Nav>
+      <Navbar />
       <About></About>
     </div>
   );
