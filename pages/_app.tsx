@@ -17,6 +17,7 @@ export default function App(props: AppProps) {
       </Head>
 
       <MantineProvider
+        withCSSVariables
         withGlobalStyles
         withNormalizeCSS
         theme={{
