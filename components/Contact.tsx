@@ -3,7 +3,7 @@ import { NextPage } from 'next';
 interface Props {}
 
 const Contact: NextPage<Props> = () => {
-  return <div>Contact Section</div>;
+  return <div className='w-screen h-screen'>Contact Section</div>;
 };
 
 export default Contact;
