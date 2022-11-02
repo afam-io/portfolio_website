@@ -16,6 +16,7 @@ export default function Home() {
       <div className='text-sky-500'>Hello</div>
       <Navbar />
       <Main />
+      <About />
       <Projects />
       <Contact />
     </div>

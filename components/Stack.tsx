@@ -5,7 +5,11 @@ import { NextPage } from 'next';
 interface Props {}
 
 const Stack: NextPage<Props> = () => {
-  return <div className='w-screen h-screen'>Stack Section</div>;
+  return (
+    <div id='stack' className='w-screen h-screen'>
+      Stack Section
+    </div>
+  );
 };
 
 export default Stack;

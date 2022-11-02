@@ -8,6 +8,25 @@ const Nav: NextPage<Props> = (): ReactElement => {
   return (
     <div className='navbar bg-base-100'>
       <div className='navbar-start'>
+        <a className='text-xl normal-case btn btn-ghost'>daisyUI</a>
+      </div>
+      <div className='hidden navbar-center lg:flex'>
+        <ul className='p-0 menu menu-horizontal'>
+          <li>
+            <Link href='/#home'>Home</Link>
+          </li>
+          <li>
+            <Link href='/#about'>About</Link>
+          </li>
+          <li>
+            <Link href='/#projects'>Projects</Link>
+          </li>
+          <li>
+            <Link href='/#contact'>Contact</Link>
+          </li>
+        </ul>
+      </div>
+      <div className='navbar-end'>
         <div className='dropdown'>
           <label tabIndex={0} className='btn btn-ghost lg:hidden'>
             <svg
@@ -41,33 +60,9 @@ const Nav: NextPage<Props> = (): ReactElement => {
             </li>
           </ul>
         </div>
-        <a className='text-xl normal-case btn btn-ghost'>daisyUI</a>
-      </div>
-      <div className='hidden navbar-center lg:flex'>
-        <ul className='p-0 menu menu-horizontal'>
-          <li>
-            <Link href='/#home'>Home</Link>
-          </li>
-          <li>
-            <Link href='/#about'>About</Link>
-          </li>
-          <li>
-            <Link href='/#projects'>Projects</Link>
-          </li>
-          <li>
-            <Link href='/#contact'>Contact</Link>
-          </li>
-        </ul>
-      </div>
-      <div className='navbar-end'>
-        <a className='btn'>Get started</a>
       </div>
     </div>
   );
 };
 
 export default Nav;
-
-/* 
-
-*/
