@@ -6,9 +6,9 @@ interface Props {}
 
 const Nav: NextPage<Props> = (): ReactElement => {
   return (
-    <div className='navbar bg-base-100'>
+    <div className='fixed z-50 opacity-100 bg-primary dark:bg-base-200 navbar'>
       <div className='navbar-start'>
-        <a className='text-xl normal-case btn btn-ghost'>daisyUI</a>
+        <a className='text-xl normal-case btn btn-ghost'>LogoPH</a>
       </div>
       <div className='hidden navbar-center lg:flex'>
         <ul className='p-0 menu menu-horizontal'>
