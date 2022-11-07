@@ -1,10 +1,8 @@
 import { NextPage } from 'next';
 import Link from 'next/link';
-import { ReactElement } from 'react';
-
 interface Props {}
 
-const Nav: NextPage<Props> = (): ReactElement => {
+const Nav: NextPage<Props> = () => {
   return (
     <div className='fixed z-50 opacity-100 bg-primary dark:bg-base-200 navbar'>
       <div className='navbar-start'>
