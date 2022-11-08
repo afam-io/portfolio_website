@@ -6,57 +6,119 @@ const Projects: NextPage<Props> = () => {
   return (
     <div className='w-screen h-screen bg-base-200' id='projects'>
       <div className='w-full carousel'>
-        <div id='item1' className='w-full carousel-item'>
-          <Image
-            src='/../public/images/afam_headshot_books_cropped.jpg'
-            alt="image of a project I've worked on"
-            className='w-full'
-            height={300}
-            width={300}
-          />
+        <div id='slide1' className='relative w-full carousel-item'>
+          <div className='shadow-xl card lg:card-side bg-base-100'>
+            <figure>
+              <Image
+                src='/images/afam_headshot_books_cropped.jpg'
+                alt="image of a project I've worked on"
+                className='w-full'
+                height={300}
+                width={300}
+              />
+            </figure>
+            <div className='card-body'>
+              <h2 className='card-title'>New album is released!</h2>
+              <p>Click the button to listen on Spotiwhy app.</p>
+              <div className='justify-end card-actions'>
+                <button className='btn btn-primary'>Listen</button>
+              </div>
+            </div>
+          </div>{' '}
+          <div className='absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2'>
+            <a href='#slide4' className='btn btn-circle'>
+              ❮
+            </a>
+            <a href='#slide2' className='btn btn-circle'>
+              ❯
+            </a>
+          </div>
         </div>
-        <div id='item2' className='w-full carousel-item'>
-          <Image
-            src='/../public/images/afam_headshot_books_cropped.jpg'
-            alt="image of a project I've worked on"
-            className='w-full'
-            height={300}
-            width={300}
-          />
+        <div id='slide2' className='relative w-full carousel-item'>
+          <div className='shadow-xl card lg:card-side bg-base-100'>
+            <figure>
+              <Image
+                src='/images/afam_headshot_books_cropped.jpg'
+                alt="image of a project I've worked on"
+                className='w-full'
+                height={300}
+                width={300}
+              />
+            </figure>
+            <div className='card-body'>
+              <h2 className='card-title'>New album is released!</h2>
+              <p>Click the button to listen on Spotiwhy app.</p>
+              <div className='justify-end card-actions'>
+                <button className='btn btn-primary'>Listen</button>
+              </div>
+            </div>
+          </div>{' '}
+          <div className='absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2'>
+            <a href='#slide1' className='btn btn-circle'>
+              ❮
+            </a>
+            <a href='#slide3' className='btn btn-circle'>
+              ❯
+            </a>
+          </div>
         </div>
-        <div id='item3' className='w-full carousel-item'>
-          <Image
-            src='/../public/images/afam_headshot_books_cropped.jpg'
-            alt="image of a project I've worked on"
-            className='w-full'
-            height={300}
-            width={300}
-          />
+        <div id='slide3' className='relative w-full carousel-item'>
+          <div className='shadow-xl card lg:card-side bg-base-100'>
+            <figure>
+              <Image
+                src='/images/afam_headshot_books_cropped.jpg'
+                alt="image of a project I've worked on"
+                className='w-full'
+                height={300}
+                width={300}
+              />
+            </figure>
+            <div className='card-body'>
+              <h2 className='card-title'>New album is released!</h2>
+              <p>Click the button to listen on Spotiwhy app.</p>
+              <div className='justify-end card-actions'>
+                <button className='btn btn-primary'>Listen</button>
+              </div>
+            </div>
+          </div>{' '}
+          <div className='absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2'>
+            <a href='#slide2' className='btn btn-circle'>
+              ❮
+            </a>
+            <a href='#slide4' className='btn btn-circle'>
+              ❯
+            </a>
+          </div>
         </div>
-        <div id='item4' className='w-full carousel-item'>
-          <Image
-            src='/../public/images/afam_headshot_books_cropped.jpg'
-            alt="image of a project I've worked on"
-            className='w-full'
-            height={300}
-            width={300}
-          />
+        <div id='slide4' className='relative w-full carousel-item'>
+          <div className='shadow-xl card lg:card-side bg-base-100'>
+            <figure>
+              <Image
+                src='/images/afam_headshot_books_cropped.jpg'
+                alt="image of a project I've worked on"
+                className='w-full'
+                height={300}
+                width={300}
+              />
+            </figure>
+            <div className='card-body'>
+              <h2 className='card-title'>New album is released!</h2>
+              <p>Click the button to listen on Spotiwhy app.</p>
+              <div className='justify-end card-actions'>
+                <button className='btn btn-primary'>Listen</button>
+              </div>
+            </div>
+          </div>{' '}
+          <div className='absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2'>
+            <a href='#slide3' className='btn btn-circle'>
+              ❮
+            </a>
+            <a href='#slide1' className='btn btn-circle'>
+              ❯
+            </a>
+          </div>
         </div>
       </div>
-      <div className='flex justify-center w-full gap-2 py-2'>
-        <a href='#item1' className='btn btn-xs'>
-          1
-        </a>
-        <a href='#item2' className='btn btn-xs'>
-          2
-        </a>
-        <a href='#item3' className='btn btn-xs'>
-          3
-        </a>
-        <a href='#item4' className='btn btn-xs'>
-          4
-        </a>
-      </div>{' '}
     </div>
   );
 };
