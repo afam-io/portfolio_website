@@ -1,5 +1,6 @@
 import { NextPage } from 'next';
 import Image from 'next/image';
+import PersonalImage from '../public/images/afam_headshot_books_cropped.jpg';
 interface Props {}
 
 const About: NextPage<Props> = () => {
@@ -7,11 +8,9 @@ const About: NextPage<Props> = () => {
     <div className='min-h-screen hero bg-base-200'>
       <div className='flex-col hero-content lg:flex-row'>
         <Image
-          src='/../public/images/afam_headshot_books_cropped.jpg'
+          src={PersonalImage}
           alt='picture of Afam website author'
           className='max-w-sm rounded-lg shadow-2xl'
-          width={500}
-          height={500}
         />
         <div>
           <h2 className='text-5xl font-bold'>More About Me!</h2>
