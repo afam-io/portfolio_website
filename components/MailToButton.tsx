@@ -7,14 +7,16 @@ interface Props {
 
 const ButtonMailto = ({ mailto, label }: Props) => {
   return (
-    <Link
-      href='/'
-      onClick={(e) => {
-        window.location.href = mailto;
-        e.preventDefault();
-      }}>
-      {label}
-    </Link>
+    <button className='self-center  btn-primary btn-xs sm:btn-sm md:btn-md lg:btn-lg lg:w-1/2'>
+      <Link
+        href='/'
+        onClick={(e) => {
+          window.location.href = mailto;
+          e.preventDefault();
+        }}>
+        {label}
+      </Link>
+    </button>
   );
 };
 
