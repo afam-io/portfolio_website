@@ -9,7 +9,7 @@ const Main: NextPage<Props> = () => {
         <div className='max-w-md'>
           <h1 className='text-5xl font-bold'>
             Hello there I&#39;m Afam
-            <br />A full-stack web developer
+            <br /> A full-stack developer
           </h1>
           <p className='py-6'>
             Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
