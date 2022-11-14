@@ -5,7 +5,7 @@ interface Props {}
 
 const About: NextPage<Props> = () => {
   return (
-    <div className='min-h-screen hero bg-base-200'>
+    <div className='min-h-screen hero bg-base-200' id='about'>
       <div className='flex-col hero-content lg:flex-row'>
         <Image
           src={PersonalImage}
