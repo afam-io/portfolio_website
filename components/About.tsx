@@ -15,9 +15,6 @@ const About: NextPage<Props> = () => {
           src={'/images/afam_headshot_books_cropped.jpg'}
           alt='picture of Afam website author'
           fill
-          sizes='(max-width: 768px) 100vw,
-          (max-width: 1200px) 50vw,
-          33vw'
           className='rounded-lg shadow-2xl object-fit'
         />
       </div>

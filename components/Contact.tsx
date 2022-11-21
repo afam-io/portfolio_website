@@ -1,5 +1,5 @@
 import { NextPage } from 'next';
-import MailToButton from './MailToButton';
+import MailToButton from './mail_to_button';
 
 interface Props {}
 
