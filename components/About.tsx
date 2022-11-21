@@ -1,5 +1,5 @@
 import { NextPage } from 'next';
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import PersonalImage from '../public/images/afam_headshot_books_cropped.jpg';
 interface Props {}
 
@@ -8,18 +8,23 @@ interface Props {}
 const About: NextPage<Props> = () => {
   return (
     <div
-      className='box-border flex flex-col min-h-screen pb-40 border-4 border-red-500 md:py-28 md:flex-row bg-base-200 '
+      className='flex flex-col h-screen border-4 border-red-500 md:flex-row bg-base-200 '
       id='about'>
-      <div className='relative w-10 h-10 md:w-[40rem] md:h-[40rem]'>
+      <div className='border-4 border-purple-500 md:h-full md:w-auto'>
         <Image
           src={'/images/afam_headshot_books_cropped.jpg'}
           alt='picture of Afam website author'
-          fill
-          className='rounded-lg shadow-2xl object-fit'
+          height={850}
+          width={600}
+          priority
+          sizes='100vh'
+          className='object-fill'
         />
       </div>
-      <div className='flex flex-col`'>
-        <h2 className='text-5xl font-bold'>More About Me!</h2>
+      <div className='flex flex-col border-4 border-green-500'>
+        <h2 className='text-5xl font-bold border-4 border-blue-500'>
+          More About Me!
+        </h2>
         <p className='py-6'>
           Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
           excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a
