@@ -1,5 +1,7 @@
 import { NextPage } from 'next';
 import Image from 'next/image';
+import PersonalImage from '../public/images/afam_headshot_books_cropped.jpg';
+
 interface Props {}
 
 const Projects: NextPage<Props> = () => {
@@ -10,16 +12,14 @@ const Projects: NextPage<Props> = () => {
           <div className='shadow-xl card lg:card-side bg-base-100'>
             <figure>
               <Image
-                src='/images/afam_headshot_books_cropped.jpg'
+                src={PersonalImage}
                 alt="image of a project I've worked on"
                 className='w-full'
-                height={300}
-                width={300}
               />
             </figure>
             <div className='card-body'>
               <h2 className='card-title'>New album is released!</h2>
-              <p>Click the button to listen on Spotiwhy app.</p>
+              <p>Click the button to listen on Spotify app.</p>
               <div className='justify-end card-actions'>
                 <button className='btn btn-primary'>Listen</button>
               </div>
@@ -38,11 +38,9 @@ const Projects: NextPage<Props> = () => {
           <div className='shadow-xl card lg:card-side bg-base-100'>
             <figure>
               <Image
-                src='/images/afam_headshot_books_cropped.jpg'
+                src={PersonalImage}
                 alt="image of a project I've worked on"
                 className='w-full'
-                height={300}
-                width={300}
               />
             </figure>
             <div className='card-body'>
@@ -66,11 +64,9 @@ const Projects: NextPage<Props> = () => {
           <div className='shadow-xl card lg:card-side bg-base-100'>
             <figure>
               <Image
-                src='/images/afam_headshot_books_cropped.jpg'
+                src={PersonalImage}
                 alt="image of a project I've worked on"
                 className='w-full'
-                height={300}
-                width={300}
               />
             </figure>
             <div className='card-body'>
@@ -94,11 +90,9 @@ const Projects: NextPage<Props> = () => {
           <div className='shadow-xl card lg:card-side bg-base-100'>
             <figure>
               <Image
-                src='/images/afam_headshot_books_cropped.jpg'
+                src={PersonalImage}
                 alt="image of a project I've worked on"
                 className='w-full'
-                height={300}
-                width={300}
               />
             </figure>
             <div className='card-body'>
