@@ -8,15 +8,15 @@ interface Props {}
 const About: NextPage<Props> = () => {
   return (
     <div
-      className='flex flex-col min-h-screen pb-40 border-4 border-red-500 md:flex-row bg-base-200 '
+      className='flex flex-col min-h-screen border-4 border-red-500 lg:flex-row bg-base-200 '
       id='about'>
-      <div>
+      <div className='xl:w-50% lg:w-full '>
         <Image
           src={'/images/afam_headshot_books_cropped.jpg'}
           alt='picture of Afam website author'
-          height={1000}
-          width={500}
-          className='object-fill border-4 border-green-400 rounded-lg shadow-2xl md:h-full'
+          height={1757}
+          width={1163}
+          className='object-cover w-full border-4 border-green-400 lg: lg:h-full xl:w-auto xl:h-full'
         />
       </div>
       <div className='flex flex-col'>
