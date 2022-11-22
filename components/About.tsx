@@ -12,10 +12,8 @@ const About: NextPage<Props> = () => {
       id='about'>
       <div className='xl:w-50% lg:w-full '>
         <Image
-          src={'/images/afam_headshot_books_cropped.jpg'}
+          src={PersonalImage}
           alt='picture of Afam website author'
-          height={1757}
-          width={1163}
           className='object-cover w-full border-4 border-green-400 lg: lg:h-full xl:w-auto xl:h-full'
         />
       </div>
