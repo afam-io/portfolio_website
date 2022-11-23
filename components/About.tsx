@@ -8,13 +8,13 @@ interface Props {}
 const About: NextPage<Props> = () => {
   return (
     <div
-      className='flex flex-col min-h-screen border-4 border-red-500 lg:flex-row bg-base-200 '
+      className='flex flex-col min-h-screen lg:flex-row bg-base-200 '
       id='about'>
       <div className='xl:w-50% lg:w-full '>
         <Image
           src={PersonalImage}
           alt='picture of Afam website author'
-          className='object-cover w-full border-4 border-green-400 lg: lg:h-full xl:w-auto xl:h-full'
+          className='object-cover w-full lg: lg:h-[95%] xl:w-auto xl:h-[95%]'
         />
       </div>
       <div className='flex flex-col'>
