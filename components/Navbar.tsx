@@ -2,7 +2,7 @@ import { NextPage } from 'next';
 import Link from 'next/link';
 interface Props {}
 
-const Nav: NextPage<Props> = () => {
+const Nav = () => {
   return (
     <div className='fixed z-50 opacity-100 bg-primary dark:bg-base-200 navbar'>
       <div className='navbar-start'>
