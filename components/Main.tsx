@@ -12,9 +12,8 @@ const Main: NextPage<Props> = () => {
             <br /> A full-stack developer
           </h1>
           <p className='py-6'>
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
+            I&apos;m a full-stack software engineer looking for my first
+            developer role.
           </p>
         </div>
       </div>

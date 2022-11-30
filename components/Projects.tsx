@@ -48,11 +48,23 @@ const Projects: NextPage<Props> = () => {
                 className='w-full'
               />
             </figure>
-            <div className='card-body'>
-              <h2 className='card-title'>New album is released!</h2>
-              <p>Click the button to listen on Spotiwhy app.</p>
+            <div className='w-1/3 card-body'>
+              <h2 className='card-title'>Project Sourcery</h2>
+              <p className=''>
+                Sourcery is a centralized platform for posting and viewing
+                resources that could be of use to School of Code bootcampers.
+                Users can post links to resources they deem useful by entering
+                their name, the URL of the resource and a brief description of
+                how the resource may be helpful into the dedicated input fields
+                at the top of the page. Users can also view resources previously
+                posted by themself or other users, and are even able to add a
+                like to the post to show their appreciation. There are also
+                links across the navigation bar which lead to well known
+                commonly used resources.
+              </p>
               <div className='justify-end card-actions'>
-                <button className='btn btn-primary'>Listen</button>
+                <button className='btn btn-primary'>Frontend Repo</button>
+                <button className='btn btn-primary'>Backend Repo</button>
               </div>
             </div>
           </div>{' '}
@@ -65,7 +77,7 @@ const Projects: NextPage<Props> = () => {
             </a>
           </div>
         </div>
-        <div id='slide3' className='relative w-full carousel-item'>
+        <div id='slide3' className='relative hidden w-full carousel-item'>
           <div className='shadow-xl card lg:card-side bg-base-100'>
             <figure>
               <Image
@@ -91,7 +103,7 @@ const Projects: NextPage<Props> = () => {
             </a>
           </div>
         </div>
-        <div id='slide4' className='relative w-full carousel-item'>
+        <div id='slide4' className='relative hidden w-full carousel-item'>
           <div className='shadow-xl card lg:card-side bg-base-100'>
             <figure>
               <Image
