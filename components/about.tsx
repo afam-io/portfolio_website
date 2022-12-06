@@ -13,21 +13,22 @@ const About: NextPage<Props> = () => {
     <div
       className='flex flex-col min-h-screen lg:pt-16 lg:flex-row bg-base-200'
       id='about'>
-      <div className='xl:w-50% lg:w-full '>
+      <div className='xl:w-50% md:w-50% '>
         <Image
           src={PersonalImage}
           alt='picture of Afam website author'
           className='object-cover w-full lg: lg:h-[95%] xl:w-auto xl:h-[95%]'
         />
       </div>
-      <div className='flex flex-col py-2 pl-2'>
-        <h2 className='text-5xl font-bold '>More About Me!</h2>
-        <p className='py-8 '>
-          I&apos;m a full-stack software engineer looking for my first developer
-          role.
-        </p>
+      <section className='flex flex-col pl-3 md:pl-8 md:w-[44%]'>
+        <h2
+          className='w-screen md:w-full leading-tight md:tracking-none
+        md:pb-8 md:leading-none font-bold    text-center mt-4 pb-2  ml-[-1rem]'>
+          A Bit More About Me
+        </h2>
+
+        <h3>⚒️ Currently Working on</h3>
         <p>
-          🌱 I&apos;m currently learning:
           <ul>
             <li>How to build a CI/CD pipeline and use docker.</li>
             <li>
@@ -40,21 +41,28 @@ const About: NextPage<Props> = () => {
             </li>
           </ul>
         </p>
-
+        <h3> 🎯 Hobbies</h3>
         <p>
-          Hobbies
           <ul>
             <li>
-              Reading: I've been an avid reader my entire life. My most loved
-              genres include fantasy economic history, philosophy and personal
-              improvement.{' '}
+              <strong>📖 Reading</strong>
+              <br /> Favourite genres: fantasy, history and philosophy.{' '}
             </li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>
+              {' '}
+              <strong> 🏞️ Park / Thameside strolls</strong>
+              <br />
+              Preferred London spots: Regents Park and Kew Gardens.
+            </li>
+            <li>
+              {' '}
+              <strong>🎾 Tennis</strong>
+              <br />
+              Its hard not to love the feeling of flying across the court.
+            </li>
           </ul>
         </p>
-      </div>
+      </section>
     </div>
   );
 };

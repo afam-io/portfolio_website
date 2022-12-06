@@ -1,19 +1,21 @@
 import { NextPage } from 'next';
 
 interface Props {}
-
+/**
+ *
+ * @todo add animation / image below text shifting title card up
+ */
 const Main: NextPage<Props> = () => {
   return (
-    <div id='home' className='min-h-screen hero bg-base-200'>
+    <div id='home' className='min-h-[95vh] hero bg-base-200'>
       <div className='text-center hero-content'>
-        <div className='max-w-md'>
-          <h1 className='text-5xl font-bold'>
-            Hello there I&#39;m Afam
-            <br /> A full-stack developer
+        <div className='max-w-xl md:max-w-3xl'>
+          <h1 className='text-5xl tracking-wide md:tracking-wide md:text-6xl'>
+            Hi 👋🏿 I&#39;m Afam A full-stack developer
           </h1>
-          <p className='py-6'>
-            I&apos;m a full-stack software engineer looking for my first
-            developer role.
+          <p className='py-6 text-lg tracking-tight'>
+            I&apos;ve worked in operational roles across several startups and am
+            now looking to bring that experience to my first developer role!
           </p>
         </div>
       </div>
