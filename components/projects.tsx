@@ -8,7 +8,7 @@ interface Props {}
 
 const Projects: NextPage<Props> = () => {
   return (
-    <div className='w-screen h-screen bg-base-200' id='projects'>
+    <div className='w-screen h-screen lg:pt-16 bg-base-200' id='projects'>
       <div className='w-full carousel'>
         <div id='slide1' className='relative w-full carousel-item'>
           <div className='shadow-xl card lg:card-side bg-base-100'>
