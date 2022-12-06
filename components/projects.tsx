@@ -9,8 +9,10 @@ interface Props {}
 const Projects: NextPage<Props> = () => {
   return (
     <div className='w-screen h-screen lg:pt-16 bg-base-200' id='projects'>
-      <div className='w-full carousel'>
-        <div id='slide1' className='relative w-full carousel-item'>
+      <h1 className='py-10 pl-2'>Projects</h1>
+
+      <div className='w-[95vw] mx-2 h-[50vh] md:max-h-fit md:w-full carousel'>
+        <div id='item1' className='w-full carousel-item'>
           <div className='shadow-xl card lg:card-side bg-base-100'>
             <figure>
               <Image
@@ -19,7 +21,7 @@ const Projects: NextPage<Props> = () => {
                 className='w-full'
               />
             </figure>
-            <div className='card-body'>
+            <div className=' max-h-1/3 card-body'>
               <h2 className='card-title'>Project Redeem!</h2>
               <p>
                 Including a four week full stack project that allowed people to
@@ -30,16 +32,8 @@ const Projects: NextPage<Props> = () => {
               </div>
             </div>
           </div>{' '}
-          <div className='absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2'>
-            <a href='#slide4' className='btn btn-circle'>
-              ❮
-            </a>
-            <a href='#slide2' className='btn btn-circle'>
-              ❯
-            </a>
-          </div>
         </div>
-        <div id='slide2' className='relative w-full carousel-item'>
+        <div id='item2' className='w-full carousel-item'>
           <div className='shadow-xl card lg:card-side bg-base-100'>
             <figure>
               <Image
@@ -48,9 +42,9 @@ const Projects: NextPage<Props> = () => {
                 className='w-full'
               />
             </figure>
-            <div className='w-1/3 card-body'>
-              <h2 className='card-title'>Project Sourcery</h2>
-              <p className=''>
+            <div className=' h-fit card-body'>
+              <h2 className=''>Project Sourcery</h2>
+              <p>
                 Sourcery is a centralized platform for posting and viewing
                 resources that could be of use to School of Code bootcampers.
                 Users can post links to resources they deem useful by entering
@@ -62,76 +56,49 @@ const Projects: NextPage<Props> = () => {
                 links across the navigation bar which lead to well known
                 commonly used resources.
               </p>
-              <div className='justify-end card-actions'>
-                <button className='btn btn-primary'>Frontend Repo</button>
-                <button className='btn btn-primary'>Backend Repo</button>
-              </div>
+              <button className='btn btn-primary'>Frontend Repo</button>
+              <button className='btn btn-primary'>Backend Repo</button>
             </div>
           </div>{' '}
-          <div className='absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2'>
-            <a href='#slide1' className='btn btn-circle'>
-              ❮
-            </a>
-            <a href='#slide3' className='btn btn-circle'>
-              ❯
-            </a>
-          </div>
         </div>
-        <div id='slide3' className='relative hidden w-full carousel-item'>
-          <div className='shadow-xl card lg:card-side bg-base-100'>
-            <figure>
-              <Image
-                src={PersonalImage}
-                alt="image of a project I've worked on"
-                className='w-full'
-              />
-            </figure>
-            <div className='card-body'>
-              <h2 className='card-title'>New album is released!</h2>
-              <p>Click the button to listen on Spotiwhy app.</p>
-              <div className='justify-end card-actions'>
-                <button className='btn btn-primary'>Listen</button>
-              </div>
-            </div>
-          </div>{' '}
-          <div className='absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2'>
-            <a href='#slide2' className='btn btn-circle'>
-              ❮
-            </a>
-            <a href='#slide4' className='btn btn-circle'>
-              ❯
-            </a>
-          </div>
-        </div>
-        <div id='slide4' className='relative hidden w-full carousel-item'>
-          <div className='shadow-xl card lg:card-side bg-base-100'>
-            <figure>
-              <Image
-                src={PersonalImage}
-                alt="image of a project I've worked on"
-                className='w-full'
-              />
-            </figure>
-            <div className='card-body'>
-              <h2 className='card-title'>New album is released!</h2>
-              <p>Click the button to listen on Spotiwhy app.</p>
-              <div className='justify-end card-actions'>
-                <button className='btn btn-primary'>Listen</button>
-              </div>
-            </div>
-          </div>{' '}
-          <div className='absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2'>
-            <a href='#slide3' className='btn btn-circle'>
-              ❮
-            </a>
-            <a href='#slide1' className='btn btn-circle'>
-              ❯
-            </a>
-          </div>
-        </div>
+      </div>
+      <div className='flex justify-center w-full gap-2 mb-[10rem] md:py-2'>
+        <a href='#item1' className='btn btn-xs'>
+          1
+        </a>
+        <a href='#item2' className='btn btn-xs'>
+          2
+        </a>
+        <a href='#item3' className='btn btn-xs'>
+          3
+        </a>
+        <a href='#item4' className='btn btn-xs'>
+          4
+        </a>
       </div>
     </div>
   );
 };
 
 export default Projects;
+
+/* <div className="w-full carousel">
+  <div id="item1" className="w-full carousel-item">
+    <img src="https://placeimg.com/800/200/arch" className="w-full" />
+  </div> 
+  <div id="item2" className="w-full carousel-item">
+    <img src="https://placeimg.com/800/200/arch" className="w-full" />
+  </div> 
+  <div id="item3" className="w-full carousel-item">
+    <img src="https://placeimg.com/800/200/arch" className="w-full" />
+  </div> 
+  <div id="item4" className="w-full carousel-item">
+    <img src="https://placeimg.com/800/200/arch" className="w-full" />
+  </div>
+</div> 
+<div className="flex justify-center w-full gap-2 py-2">
+  <a href="#item1" className="btn btn-xs">1</a> 
+  <a href="#item2" className="btn btn-xs">2</a> 
+  <a href="#item3" className="btn btn-xs">3</a> 
+  <a href="#item4" className="btn btn-xs">4</a>
+</div> */
