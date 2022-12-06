@@ -1,30 +1,14 @@
 import { NextPage } from 'next';
 import Link from 'next/link';
 interface Props {}
-
+/**
+ *
+ * @todo v1 get a logo
+ */
 const Nav = () => {
   return (
     <div className='fixed z-50 opacity-100 bg-primary dark:bg-base-200 navbar'>
       <div className='navbar-start'>
-        <a className='text-xl normal-case btn btn-ghost'>LogoPH</a>
-      </div>
-      <div className='hidden navbar-center lg:flex'>
-        <ul className='p-0 menu menu-horizontal'>
-          <li>
-            <Link href='/#home'>Home</Link>
-          </li>
-          <li>
-            <Link href='/#about'>About</Link>
-          </li>
-          <li>
-            <Link href='/#projects'>Projects</Link>
-          </li>
-          <li>
-            <Link href='/#contact'>Contact</Link>
-          </li>
-        </ul>
-      </div>
-      <div className='navbar-end'>
         <div className='dropdown'>
           <label tabIndex={0} className='btn btn-ghost lg:hidden'>
             <svg
@@ -58,6 +42,25 @@ const Nav = () => {
             </li>
           </ul>
         </div>
+      </div>
+      <div className='hidden navbar-center lg:flex'>
+        <ul className='p-0 menu menu-horizontal'>
+          <li>
+            <Link href='/#home'>Home</Link>
+          </li>
+          <li>
+            <Link href='/#about'>About</Link>
+          </li>
+          <li>
+            <Link href='/#projects'>Projects</Link>
+          </li>
+          <li>
+            <Link href='/#contact'>Contact</Link>
+          </li>
+        </ul>
+      </div>
+      <div className='navbar-end'>
+        <a className='hidden text-xl normal-case btn btn-ghost'>Afam Okoh</a>
       </div>
     </div>
   );

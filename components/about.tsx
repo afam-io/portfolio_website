@@ -27,7 +27,7 @@ const About: NextPage<Props> = () => {
           A Bit More About Me
         </h2>
 
-        <h3>⚒️ Currently Working on</h3>
+        <h3>⚒️ Currently Working On</h3>
         <p>
           <ul>
             <li>How to build a CI/CD pipeline and use docker.</li>

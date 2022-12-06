@@ -15,7 +15,9 @@ html {
   h6 {
     @apply font-bold;
   }
-
+  h1 {
+    @apply text-5xl md:text-6xl;
+  }
   h2 {
     @apply text-[2.8rem] md:text-5xl;
   }
@@ -25,10 +27,6 @@ html {
   li {
     /* @apply cursor-pointer; */
     @apply py-1 leading-normal md:leading-none dark:list-disc md:py-2 list-item;
-  }
-
-  ul {
-    @apply pl-6 pr-3 md:pl-10;
   }
 
   p {

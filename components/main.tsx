@@ -10,7 +10,7 @@ const Main: NextPage<Props> = () => {
     <div id='home' className='min-h-[95vh] hero bg-base-200'>
       <div className='text-center hero-content'>
         <div className='max-w-xl md:max-w-3xl'>
-          <h1 className='text-5xl tracking-wide md:tracking-wide md:text-6xl'>
+          <h1 className='tracking-wide  md:tracking-wide'>
             Hi 👋🏿 I&#39;m Afam A full-stack developer
           </h1>
           <p className='py-6 text-lg tracking-tight'>
