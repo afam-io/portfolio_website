@@ -7,7 +7,7 @@ interface Props {
 
 const ButtonMailto = ({ mailto, label }: Props) => {
   return (
-    <button className='self-center  btn-primary btn-xs sm:btn-sm md:btn-md lg:btn-lg lg:w-1/2'>
+    <button className='self-center md:min-w-fit md:h-fit btn-primary btn-xs sm:btn-sm md:btn-md lg:btn-lg lg:w-1/2'>
       <Link
         href='/'
         onClick={(e) => {

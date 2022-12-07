@@ -5,11 +5,44 @@ import ProjectRedeemImage from '../public/images/redeem_screenshot.png';
 import ProjectSorcery from '../public/images/project_sorcery_screenshot.png';
 
 interface Props {}
-
+/**
+ *
+ * @todo  implement a simple responsive projects page using cards and grid.
+ * @todo I will start with 2 cards that go in a grid that responsively changes to large cards when resized
+ *
+ */
 const Projects: NextPage<Props> = () => {
   return (
-    <div className='w-screen h-screen lg:pt-16 bg-base-200' id='projects'>
+    <div
+      className='w-screen border-4 border-indigo-600 max-h-fit lg:pt-16 bg-base-200'
+      id='projects'>
       <h1 className='py-10 pl-2'>Projects</h1>
+      <div className='shadow-xl card lg:card-side bg-base-100'>
+        <figure>
+          <Image
+            src={ProjectRedeemImage}
+            alt="image of a project I've worked on"
+            className='w-full'
+          />
+        </figure>
+        <div className=' h-fit card-body'>
+          <h2 className=''>Project Redeem!</h2>
+          <p>
+            Including a four week full stack project that allowed people to
+            share tutorials for building home grown technology.
+          </p>
+
+          <button className='btn btn-primary'>See it in Action</button>
+        </div>
+      </div>{' '}
+    </div>
+  );
+};
+
+export default Projects;
+
+/* 
+Previous Sourcery Code
 
       <div className='w-[95vw] mx-2 h-[50vh] md:max-h-fit md:w-full carousel'>
         <div id='item1' className='w-full carousel-item'>
@@ -21,28 +54,27 @@ const Projects: NextPage<Props> = () => {
                 className='w-full'
               />
             </figure>
-            <div className=' max-h-1/3 card-body'>
-              <h2 className='card-title'>Project Redeem!</h2>
+            <div className=' h-fit card-body'>
+              <h2 className=''>Project Redeem!</h2>
               <p>
                 Including a four week full stack project that allowed people to
                 share tutorials for building home grown technology.
               </p>
-              <div className='justify-end card-actions'>
-                <button className='btn btn-primary'>See it in Action</button>
-              </div>
+
+              <button className='btn btn-primary'>See it in Action</button>
             </div>
           </div>{' '}
         </div>
-        <div id='item2' className='w-full carousel-item'>
+        <div id='item2' className='w-full carousel-item md:px-5'>
           <div className='shadow-xl card lg:card-side bg-base-100'>
             <figure>
               <Image
                 src={ProjectSorcery}
                 alt="image of a project I've worked on"
-                className='w-full'
+                className='w-full leading-tight md:object-cover md:w-auto'
               />
             </figure>
-            <div className=' h-fit card-body'>
+            <div className='overflow-scroll min-h-fit card-body mt-[-1rem]'>
               <h2 className=''>Project Sourcery</h2>
               <p>
                 Sourcery is a centralized platform for posting and viewing
@@ -76,11 +108,8 @@ const Projects: NextPage<Props> = () => {
           4
         </a>
       </div>
-    </div>
-  );
-};
 
-export default Projects;
+*/
 
 /* <div className="w-full carousel">
   <div id="item1" className="w-full carousel-item">
