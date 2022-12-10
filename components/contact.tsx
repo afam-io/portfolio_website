@@ -6,10 +6,10 @@ interface Props {}
 const Contact: NextPage<Props> = () => {
   return (
     <div
-      className='flex items-center justify-center w-screen h-screen border-4 border-red-600 bg-base-200 md:h-[50vh]'
+      className='flex items-center justify-center w-screen h-[25vh]  bg-base-200 md:h-[25vh] lg:h-[50vh]'
       id='contact'>
       <div className='flex flex-col'>
-        <h1 className='border-solid mb-52 md:mb-11 '>Say Hi</h1>
+        <h1 className='pb-14 md:pb-11'>Say Hi 👇🏿</h1>
 
         <MailToButton
           label='Write me an E-Mail'
