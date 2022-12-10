@@ -27,32 +27,32 @@ const About: NextPage<Props> = () => {
           A Bit More About Me
         </h2>
 
-        <h3>⚒️ Currently Working On</h3>
+        <h3 className='pb-3'>⚒️ Currently Working On</h3>
 
-        <ul className='lg:pl-3'>
-          <li className='py-3 text-lg lg:text-xl'>
+        <ul className='pl-5 lg:pl-3'>
+          <li className='py-1.5 text-lg md:py-3 lg:text-xl'>
             How to build a CI/CD pipeline and use docker.
           </li>
-          <li className='py-3 text-lg lg:text-xl'>
+          <li className='py-1.5 text-lg md:py-3 lg:text-xl'>
             How to use storybook to improve my frontend development experience.{' '}
           </li>
-          <li className='py-3 text-lg lg:text-xl'>
+          <li className='py-1.5 text-lg md:py-3 lg:text-xl'>
             How to build decentralised applications with a solidity backend and
             a react front-end.
           </li>
         </ul>
-        <h3> 🎯 Hobbies</h3>
-        <ul className='lg:pl-3'>
-          <li className='py-3 text-lg lg:text-xl'>
+        <h3 className='py-3'> 🎯 Hobbies</h3>
+        <ul className='pl-5 lg:pl-3'>
+          <li className='py-1.5 md:py-3 text-lg lg:text-xl'>
             <strong>📖 Reading </strong>
             Favourite genres: fantasy, history and philosophy.{' '}
           </li>
-          <li className='py-3 text-lg lg:text-xl'>
+          <li className='py-1.5 md:py-3 text-lg lg:text-xl'>
             {' '}
             <strong> 🏞️ Park / Thameside strolls </strong>
             Preferred London spots: Regents Park and Kew Gardens.
           </li>
-          <li className='py-3 text-lg lg:text-xl'>
+          <li className='py-1.5 md:py-3 text-lg lg:text-xl'>
             {' '}
             <strong>🎾 Tennis </strong>
             Its hard not to love the feeling of flying across the court.
