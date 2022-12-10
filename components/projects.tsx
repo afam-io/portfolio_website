@@ -3,6 +3,7 @@ import Image from 'next/image';
 import PersonalImage from '../public/images/afam_headshot_books_cropped.jpg';
 import ProjectRedeemImage from '../public/images/redeem_screenshot.png';
 import ProjectSorcery from '../public/images/project_sorcery_screenshot.png';
+import Link from 'next/link';
 
 interface Props {}
 /**
@@ -13,9 +14,7 @@ interface Props {}
  */
 const Projects: NextPage<Props> = () => {
   return (
-    <div
-      className='w-screen border-4 border-indigo-600 max-h-fit bg-base-200'
-      id='projects'>
+    <div className='w-screen max-h-fit bg-base-200' id='projects'>
       <h1 className='py-10 pl-2'>Projects</h1>
       <div className='shadow-xl card bg-base-100'>
         <figure>
@@ -25,14 +24,20 @@ const Projects: NextPage<Props> = () => {
             className='w-full '
           />
         </figure>
-        <div className=' h-fit card-body'>
+        <div className=' h-fit p-[0.6rem] md:py-[1.25rem] md:pl-[1rem] card-body'>
           <h3 className=''>Project Redeem!</h3>
           <p>
             Including a four week full stack project that allowed people to
             share tutorials for building home grown technology.
           </p>
 
-          <button className='btn btn-primary w-36'>See it in Action</button>
+          <Link
+            href={
+              'https://github.com/afam-io/final-project-front-end-boolean-pirates'
+            }
+            target='_blank'>
+            <button className='btn btn-primary w-36'>Find the repo here</button>
+          </Link>
         </div>
       </div>{' '}
       <div className='my-1 shadow-xl card bg-base-100'>
@@ -43,14 +48,20 @@ const Projects: NextPage<Props> = () => {
             className='w-full '
           />
         </figure>
-        <div className=' h-fit card-body'>
+        <div className='p-[0.6rem] md:py-[1.25rem] md:pl-[1rem]  h-fit card-body'>
           <h3 className=''>Project Sourcery!</h3>
           <p>
             Sourcery is a centralized platform for posting and viewing resources
             that could be of use to School of Code bootcampers.
           </p>
 
-          <button className='btn btn-primary w-36'>See it in Action</button>
+          <Link
+            href={
+              'https://github.com/afam-io/w9_frontend-project-team-sourcery'
+            }
+            target='_blank'>
+            <button className='btn btn-primary w-36'>Find the repo here</button>
+          </Link>
         </div>
       </div>{' '}
     </div>
