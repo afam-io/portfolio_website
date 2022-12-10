@@ -20,7 +20,7 @@ const About: NextPage<Props> = () => {
           className='object-cover w-full lg: lg:h-[95%] xl:w-auto xl:h-[95%]'
         />
       </div>
-      <section className='flex flex-col pl-3 md:pl-8 '>
+      <section className='flex flex-col pl-3 md:pl-5 '>
         <h2
           className='w-screen md:w-full leading-tight md:tracking-none
         md:pb-8 md:leading-none font-bold    text-center mt-4 pb-2  ml-[-1rem]'>
@@ -28,40 +28,36 @@ const About: NextPage<Props> = () => {
         </h2>
 
         <h3>⚒️ Currently Working On</h3>
-        <p>
-          <ul>
-            <li>How to build a CI/CD pipeline and use docker.</li>
-            <li>
-              How to use storybook to improve my frontend development
-              experience.{' '}
-            </li>
-            <li>
-              How to build decentralised applications with a solidity backend
-              and a react front-end.
-            </li>
-          </ul>
-        </p>
+
+        <ul className='lg:pl-3'>
+          <li className='py-3 text-lg lg:text-xl'>
+            How to build a CI/CD pipeline and use docker.
+          </li>
+          <li className='py-3 text-lg lg:text-xl'>
+            How to use storybook to improve my frontend development experience.{' '}
+          </li>
+          <li className='py-3 text-lg lg:text-xl'>
+            How to build decentralised applications with a solidity backend and
+            a react front-end.
+          </li>
+        </ul>
         <h3> 🎯 Hobbies</h3>
-        <p>
-          <ul>
-            <li>
-              <strong>📖 Reading</strong>
-              <br /> Favourite genres: fantasy, history and philosophy.{' '}
-            </li>
-            <li>
-              {' '}
-              <strong> 🏞️ Park / Thameside strolls</strong>
-              <br />
-              Preferred London spots: Regents Park and Kew Gardens.
-            </li>
-            <li>
-              {' '}
-              <strong>🎾 Tennis</strong>
-              <br />
-              Its hard not to love the feeling of flying across the court.
-            </li>
-          </ul>
-        </p>
+        <ul className='lg:pl-3'>
+          <li className='py-3 text-lg lg:text-xl'>
+            <strong>📖 Reading </strong>
+            Favourite genres: fantasy, history and philosophy.{' '}
+          </li>
+          <li className='py-3 text-lg lg:text-xl'>
+            {' '}
+            <strong> 🏞️ Park / Thameside strolls </strong>
+            Preferred London spots: Regents Park and Kew Gardens.
+          </li>
+          <li className='py-3 text-lg lg:text-xl'>
+            {' '}
+            <strong>🎾 Tennis </strong>
+            Its hard not to love the feeling of flying across the court.
+          </li>
+        </ul>
       </section>
     </div>
   );
@@ -154,4 +150,16 @@ export default About;
           </div>
         </div>
       </div>
+*/
+
+/* 
+lg:w-max line 43 projects.tsx file for sourcery image
+Users can post
+            links to resources they deem useful by entering their name, the URL
+            of the resource and a brief description of how the resource may be
+            helpful into the dedicated input fields at the top of the page.
+            Users can also view resources previously posted by themself or other
+            users, and are even able to add a like to the post to show their
+            appreciation. There are also links across the navigation bar which
+            lead to well known commonly used resources.
 */

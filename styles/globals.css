@@ -27,7 +27,7 @@ html {
   li {
     /* @apply cursor-pointer; */
     /* @apply py-1 leading-normal md:leading-none dark:list-disc md:py-2 list-item; */
-    @apply text-lg dark:list-disc list-item;
+    @apply dark:list-disc list-item;
   }
 
   p {

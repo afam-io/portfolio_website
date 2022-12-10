@@ -14,7 +14,7 @@ interface Props {}
 const Projects: NextPage<Props> = () => {
   return (
     <div
-      className='w-screen border-4 border-indigo-600 max-h-fit lg:pt-16 bg-base-200'
+      className='w-screen border-4 border-indigo-600 max-h-fit bg-base-200'
       id='projects'>
       <h1 className='py-10 pl-2'>Projects</h1>
       <div className='shadow-xl card bg-base-100'>
@@ -22,7 +22,7 @@ const Projects: NextPage<Props> = () => {
           <Image
             src={ProjectRedeemImage}
             alt="image of a project I've worked on"
-            className='w-full lg:w-10/12'
+            className='w-full '
           />
         </figure>
         <div className=' h-fit card-body'>
@@ -40,7 +40,7 @@ const Projects: NextPage<Props> = () => {
           <Image
             src={ProjectSorcery}
             alt="image of a project I've worked on"
-            className='w-full lg:w-10/12'
+            className='w-full '
           />
         </figure>
         <div className=' h-fit card-body'>
