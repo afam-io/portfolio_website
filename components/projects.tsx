@@ -36,7 +36,13 @@ const Projects: NextPage<Props> = () => {
               'https://github.com/afam-io/final-project-front-end-boolean-pirates'
             }
             target='_blank'>
-            <button className='btn btn-primary w-36'>Find the repo here</button>
+            <button className='btn btn-primary w-36'>GitHub Repository</button>
+          </Link>
+
+          <Link
+            href={'https://final-project-front-end-boolean-pirates.vercel.app/'}
+            target='_blank'>
+            <button className='btn btn-primary w-36'>Site Deployment</button>
           </Link>
         </div>
       </div>{' '}
