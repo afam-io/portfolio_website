@@ -11,12 +11,13 @@ interface Props {}
  * @todo  implement a simple responsive projects page using cards and grid.
  * @todo I will start with 2 cards that go in a grid that responsively changes to large cards when resized
  * @todo Set p tag in both projects to have max widths when larger to avoid images being squashed.
+ * @todo confirm daisy cards HTML elements in order to properly make portfolio semantic
  */
 const Projects: NextPage<Props> = () => {
   return (
     <div className='w-screen max-h-fit bg-base-200' id='projects'>
       <h1 className='py-10 pl-2'>Projects</h1>
-      <div className='shadow-xl card bg-base-100'>
+      <section className='shadow-xl card bg-base-100'>
         <figure>
           <Image
             src={ProjectRedeemImage}
@@ -45,7 +46,7 @@ const Projects: NextPage<Props> = () => {
             <button className='btn btn-primary w-36'>Site Deployment</button>
           </Link>
         </div>
-      </div>{' '}
+      </section>{' '}
       <div className='my-1 shadow-xl card bg-base-100'>
         <figure>
           <Image
