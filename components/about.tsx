@@ -26,38 +26,42 @@ const About: NextPage<Props> = () => {
         md:pb-8 md:leading-none font-bold    text-center mt-4 pb-2  ml-[-1rem]'>
           A Bit More About Me
         </h2>
+        <section>
+          <h3 className='pb-3'>⚒️ Currently Working On</h3>
 
-        <h3 className='pb-3'>⚒️ Currently Working On</h3>
-
-        <ul className='pl-5 lg:pl-3'>
-          <li className='py-1.5 text-lg md:py-3 lg:text-xl'>
-            How to build a CI/CD pipeline and use docker.
-          </li>
-          <li className='py-1.5 text-lg md:py-3 lg:text-xl'>
-            How to use storybook to improve my frontend development experience.{' '}
-          </li>
-          <li className='py-1.5 text-lg md:py-3 lg:text-xl'>
-            How to build decentralised applications with a solidity backend and
-            a react front-end.
-          </li>
-        </ul>
-        <h3 className='py-3'> 🎯 Hobbies</h3>
-        <ul className='pl-5 lg:pl-3'>
-          <li className='py-1.5 md:py-3 text-lg lg:text-xl'>
-            <strong>📖 Reading </strong>
-            Favourite genres: fantasy, history and philosophy.{' '}
-          </li>
-          <li className='py-1.5 md:py-3 text-lg lg:text-xl'>
-            {' '}
-            <strong> 🏞️ Park / Thameside strolls </strong>
-            Preferred London spots: Regents Park and Kew Gardens.
-          </li>
-          <li className='py-1.5 md:py-3 text-lg lg:text-xl'>
-            {' '}
-            <strong>🎾 Tennis </strong>
-            Its hard not to love the feeling of flying across the court.
-          </li>
-        </ul>
+          <ul className='pl-5 lg:pl-3'>
+            <li className='py-1.5 text-lg md:py-3 lg:text-xl'>
+              How to build a CI/CD pipeline and use docker.
+            </li>
+            <li className='py-1.5 text-lg md:py-3 lg:text-xl'>
+              How to use storybook to improve my frontend development
+              experience.{' '}
+            </li>
+            <li className='py-1.5 text-lg md:py-3 lg:text-xl'>
+              How to build decentralised applications with a solidity backend
+              and a react front-end.
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3 className='py-3'> 🎯 Hobbies</h3>
+          <ul className='pl-5 lg:pl-3'>
+            <li className='py-1.5 md:py-3 text-lg lg:text-xl'>
+              <strong>📖 Reading </strong>
+              Favourite genres: fantasy, history and philosophy.{' '}
+            </li>
+            <li className='py-1.5 md:py-3 text-lg lg:text-xl'>
+              {' '}
+              <strong> 🏞️ Park / Thameside strolls </strong>
+              Preferred London spots: Regents Park and Kew Gardens.
+            </li>
+            <li className='py-1.5 md:py-3 text-lg lg:text-xl'>
+              {' '}
+              <strong>🎾 Tennis </strong>
+              Its hard not to love the feeling of flying across the court.
+            </li>
+          </ul>
+        </section>
       </section>
     </div>
   );
