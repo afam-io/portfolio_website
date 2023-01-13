@@ -24,6 +24,9 @@ const Projects: NextPage<Props> = () => {
             alt="image of a project I've worked on"
             className='w-full '
           />
+          <figcaption>
+            Image of project Redeems homepage showing eco-friendly tutorials
+          </figcaption>
         </figure>
         <div className=' h-fit p-[0.6rem] md:py-[1.25rem] md:pl-[1rem] card-body'>
           <h3 className=''>Project Redeem!</h3>
@@ -54,6 +57,9 @@ const Projects: NextPage<Props> = () => {
             alt="image of a project I've worked on"
             className='w-full '
           />
+          <figcaption className=''>
+            Image of project Sourcery&#39;s frontend
+          </figcaption>
         </figure>
         <div className='p-[0.6rem] md:py-[1.25rem] md:pl-[1rem]  h-fit card-body'>
           <h3 className=''>Project Sourcery!</h3>
@@ -61,7 +67,6 @@ const Projects: NextPage<Props> = () => {
             Sourcery is a centralized platform for posting and viewing resources
             that could be of use to School of Code bootcampers.
           </p>
-
           <Link
             href={
               'https://github.com/afam-io/w9_frontend-project-team-sourcery'
