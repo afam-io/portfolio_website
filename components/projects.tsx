@@ -8,10 +8,8 @@ import Link from 'next/link';
 interface Props {}
 /**
  *
- * @todo  implement a simple responsive projects page using cards and grid.
  * @todo I will start with 2 cards that go in a grid that responsively changes to large cards when resized
- * @todo Set p tag in both projects to have max widths when larger to avoid images being squashed.
- * @todo confirm daisy cards HTML elements in order to properly make portfolio semantic
+ * @todo Correct figcaption styling or get rid of figcaptions on cards
  */
 const Projects: NextPage<Props> = () => {
   return (
@@ -24,9 +22,9 @@ const Projects: NextPage<Props> = () => {
             alt="image of a project I've worked on"
             className='w-full '
           />
-          <figcaption>
+          {/* <figcaption>
             Image of project Redeems homepage showing eco-friendly tutorials
-          </figcaption>
+          </figcaption> */}
         </figure>
         <div className=' h-fit p-[0.6rem] md:py-[1.25rem] md:pl-[1rem] card-body'>
           <h3 className=''>Project Redeem!</h3>
@@ -57,9 +55,9 @@ const Projects: NextPage<Props> = () => {
             alt="image of a project I've worked on"
             className='w-full '
           />
-          <figcaption className=''>
+          {/* <figcaption className=''>
             Image of project Sourcery&#39;s frontend
-          </figcaption>
+          </figcaption> */}
         </figure>
         <div className='p-[0.6rem] md:py-[1.25rem] md:pl-[1rem]  h-fit card-body'>
           <h3 className=''>Project Sourcery!</h3>
