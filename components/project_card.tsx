@@ -1,58 +1,44 @@
 import React, { ReactComponentElement } from 'react';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
-import { UrlObject } from 'url';
 interface Props {
- 
-    imgSrc: StaticImageData;
-    imgAlt: string;
-    title: string;
-    projectDescription: string;
-    repoLink: string;
-    deploymentLink?: string;
- 
+  imgSrc: StaticImageData;
+  imgAlt: string;
+  title: string;
+  projectDescription: string;
+  repoLink: string;
+  deploymentLink?: string;
 }
 
-// const Projects: NextPage<Props> = () => {
-
-const ProjectCard = ({  imgSrc,
+const ProjectCard = ({
+  imgSrc,
   imgAlt,
   title,
   projectDescription,
-  repoLink, deploymentLink }: Props) => {
+  repoLink,
+  deploymentLink,
+}: Props) => {
   return (
     <section className='shadow-xl card bg-base-100'>
-        <figure>
-          <Image
-            src={imgSrc}
-            alt={imgAlt}
-            className='w-full '
-          />
-          {/* <figcaption>
+      <figure>
+        <Image src={imgSrc} alt={imgAlt} className='w-full ' />
+        {/* <figcaption>
             Image of project Redeems homepage showing eco-friendly tutorials
           </figcaption> */}
-        </figure>
-        <div className=' h-fit p-[0.6rem] md:py-[1.25rem] md:pl-[1rem] card-body'>
-          <h3 className=''>{title}</h3>
-          <p>
-            {projectDescription}
-          </p>
-
-          <Link
-            href={
-              repoLink
-            }
-            target='_blank'>
-            <button className='btn btn-primary w-36'>GitHub Repository</button>
-          </Link>
-
-          <Link
-            href={deploymentLink}
-            target='_blank'>
+      </figure>
+      <div className=' h-fit p-[0.6rem] md:py-[1.25rem] md:pl-[1rem] card-body'>
+        <h3 className=''>{title}</h3>
+        <p>{projectDescription}</p>
+        <Link href={repoLink} target='_blank'>
+          <button className='btn btn-primary w-36'>GitHub Repository</button>
+        </Link>
+        {deploymentLink ? (
+          <Link href={deploymentLink} target='_blank'>
             <button className='btn btn-primary w-36'>Site Deployment</button>
           </Link>
-        </div>
-      </section>{' '}
+        ) : null}
+      </div>
+    </section>
   );
 };
 
@@ -67,10 +53,10 @@ export default ProjectCard;
             alt="image of a project I've worked on"
             className='w-full '
           />
-          {/* <figcaption>
+          /* <figcaption>
             Image of project Redeems homepage showing eco-friendly tutorials
-          </figcaption> */}
-       /*   </figure>
+          </figcaption> */
+/*   </figure>
           <div className=' h-fit p-[0.6rem] md:py-[1.25rem] md:pl-[1rem] card-body'>
             <h3 className=''>Project Redeem!</h3>
             <p>
@@ -87,11 +73,11 @@ export default ProjectCard;
             </Link>
   
             <Link
-              href={'https://final-project-front-end-boolean-pirates.vercel.app/'}
-              target='_blank'>
-              <button className='btn btn-primary w-36'>Site Deployment</button>
+            href={'https://final-project-front-end-boolean-pirates.vercel.app/'}
+            target='_blank'>
+            <button className='btn btn-primary w-36'>Site Deployment</button>
             </Link>
-          </div>
-        </section>{' '}
-
-*/
+            </div>
+            </section>{' '}
+            
+            */
