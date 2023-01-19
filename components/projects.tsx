@@ -2,7 +2,9 @@ import { NextPage } from 'next';
 import ProjectRedeemImage from '../public/images/redeem_screenshot.png';
 import ProjectSorcery from '../public/images/project_sorcery_screenshot.png';
 import ProjectCard from './project_card';
-const projectArr = [
+import type { Props as ProjectProps } from './project_card';
+
+const projectArr: ProjectProps[] = [
   {
     imgSrc: ProjectRedeemImage,
     imgAlt: "image of a project I've worked on",
@@ -24,13 +26,12 @@ const projectArr = [
   },
 ];
 
-interface Props {}
 /**
  *
  * @todo I will start with 2 cards that go in a grid that responsively changes to large cards when resized
  * @todo Correct figcaption styling or get rid of figcaptions on cards
  */
-const Projects: NextPage<Props> = () => {
+const Projects: NextPage = () => {
   return (
     <div className='w-screen max-h-fit bg-base-200' id='projects'>
       <h1 className='py-10 pl-2'>Projects</h1>

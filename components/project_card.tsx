@@ -22,9 +22,6 @@ const ProjectCard = ({
     <section className='shadow-xl card bg-base-100'>
       <figure>
         <Image src={imgSrc} alt={imgAlt} className='w-full ' />
-        {/* <figcaption>
-            Image of project Redeems homepage showing eco-friendly tutorials
-          </figcaption> */}
       </figure>
       <div className=' h-fit p-[0.6rem] md:py-[1.25rem] md:pl-[1rem] card-body'>
         <h3 className=''>{title}</h3>
@@ -41,7 +38,7 @@ const ProjectCard = ({
     </section>
   );
 };
-
+export type { Props };
 export default ProjectCard;
 
 /* 
