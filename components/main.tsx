@@ -1,11 +1,10 @@
 import { NextPage } from 'next';
 
-interface Props {}
 /**
- *
+ *@todo adding clarity on different sections
  * @todo add animation / image below text shifting title card up
  */
-const Main: NextPage<Props> = () => {
+const Main: NextPage = () => {
   return (
     <div id='home' className='min-h-screen hero bg-base-200'>
       <div className='text-center hero-content'>
