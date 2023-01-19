@@ -1,14 +1,13 @@
 import { NextPage } from 'next';
 import Image from 'next/image';
 import PersonalImage from '../public/images/afam_headshot_books_cropped.jpg';
-interface Props {}
 
 // about page styling
 /**
  * @todo v2 add accesible tags throughout code
- *
+ * @todo make sure images are clear in both backgrounds - hammers currently not very visible (give the image background good cheat)
  */
-const About: NextPage<Props> = () => {
+const About: NextPage = () => {
   return (
     <div
       className='flex flex-col min-h-screen lg:pt-16 lg:flex-row bg-base-200'
@@ -18,6 +17,7 @@ const About: NextPage<Props> = () => {
           src={PersonalImage}
           alt='picture of Afam website author'
           className='object-cover w-full lg: lg:h-[95%] xl:w-auto xl:h-[95%]'
+          //className='object-cover w-full lg: lg:max-h-[800px] xl:w-auto '
         />
       </div>
       <section className='flex flex-col pl-3 md:pl-5 '>
@@ -51,12 +51,10 @@ const About: NextPage<Props> = () => {
               Favourite genres: fantasy, history and philosophy.{' '}
             </li>
             <li className='py-1.5 md:py-3 text-lg lg:text-xl'>
-              {' '}
               <strong> 🏞️ Park / Thameside strolls </strong>
               Preferred London spots: Regents Park and Kew Gardens.
             </li>
             <li className='py-1.5 md:py-3 text-lg lg:text-xl'>
-              {' '}
               <strong>🎾 Tennis </strong>
               Its hard not to love the feeling of flying across the court.
             </li>
