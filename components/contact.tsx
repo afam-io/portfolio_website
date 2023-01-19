@@ -1,9 +1,7 @@
 import { NextPage } from 'next';
 import MailToButton from './mail_to_button';
 
-interface Props {}
-
-const Contact: NextPage<Props> = () => {
+const Contact: NextPage = () => {
   return (
     <div
       className='flex items-center justify-center w-screen h-[25vh]  bg-base-200 md:h-[25vh] lg:h-[50vh]'
