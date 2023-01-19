@@ -30,6 +30,8 @@ const projectArr: ProjectProps[] = [
  *
  * @todo I will start with 2 cards that go in a grid that responsively changes to large cards when resized
  * @todo Correct figcaption styling or get rid of figcaptions on cards
+ * @todo Explain why this project was important, what I learnt sell myself in this area.
+ * @todo Show mobile version of site in the
  */
 const Projects: NextPage = () => {
   return (
