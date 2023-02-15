@@ -10,9 +10,8 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <>
       <Navbar />
-      <Sidebar />
       <main>{children}</main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

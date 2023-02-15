@@ -7,7 +7,7 @@ interface Props {}
  */
 const Nav = () => {
   return (
-    <nav className='fixed z-50 opacity-100 bg-primary dark:bg-base-200 navbar'>
+    <nav className='fixed z-50 lg:text-lg bg-primary dark:bg-base-200 navbar'>
       <div className='navbar-start'>
         <div className='dropdown'>
           <label tabIndex={0} className='btn btn-ghost lg:hidden'>
