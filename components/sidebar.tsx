@@ -8,8 +8,8 @@ import { SocialIcon } from 'react-social-icons';
 
 const Sidebar = () => {
   return (
-    <aside className=' sticky h-screen top-0 hidden outline-2 outline-dashed outline-red-400 md:block bg-transparent'>
-      <div className='pt-[40rem]'>
+    <aside className='sticky top-0 hidden h-screen bg-transparent outline-2 outline-dashed outline-red-400 '>
+      <div className='lg:pt-[37rem] md:pt-[40rem]'>
         <SocialIcon
           url='https://github.com/afam-io'
           fgColor='gray'
