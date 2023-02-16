@@ -21,7 +21,7 @@ const ProjectCard = ({
   return (
     <section className='shadow-xl card bg-base-100'>
       <figure>
-        <Image src={imgSrc} alt={imgAlt} className='w-full ' />
+        <Image src={imgSrc} alt={imgAlt} className='w-full md:max-w-4xl ' />
       </figure>
       <div className=' h-fit p-[0.6rem] md:py-[1.25rem] md:pl-[1rem] card-body'>
         <h3 className=''>{title}</h3>

@@ -16,7 +16,7 @@ const About: NextPage = () => {
         <Image
           src={PersonalImage}
           alt='picture of Afam website author'
-          className='object-cover w-full lg: lg:h-[95%] xl:w-auto xl:h-[95%]'
+          className='object-cover w-full  lg:h-[95%] xl:w-auto xl:h-[95%]'
           //className='object-cover w-full lg: lg:max-h-[800px] xl:w-auto '
         />
       </div>
