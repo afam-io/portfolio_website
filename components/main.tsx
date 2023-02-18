@@ -6,7 +6,9 @@ import { NextPage } from 'next';
  */
 const Main: NextPage = () => {
   return (
-    <div id='home' className='min-h-screen hero bg-base-200'>
+    <div
+      id='home'
+      className='min-h-screen min-w-[100vw] hero outline-dashed outline-4 outline-blue-400 bg-base-200'>
       <div className='text-center hero-content'>
         <div className='max-w-xl md:max-w-3xl'>
           <h1 className='tracking-wide md:tracking-wide'>

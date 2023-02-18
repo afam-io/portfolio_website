@@ -8,10 +8,26 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <>
-      <Navbar />
-      <main>{children}</main>
-      {/* <Footer /> */}
-    </>
+    <div className='flex'>
+      <Sidebar />
+      <div>
+        <Navbar />
+        <main>{children}</main>
+        {/* <Footer /> */}
+      </div>
+    </div>
   );
 }
+
+/* 
+
+      <div className='flex'>
+        <Sidebar />
+        <div>
+          <Main />
+          <About />
+          <Projects />
+          <Contact />
+        </div>
+      </div>
+*/
