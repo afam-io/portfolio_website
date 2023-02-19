@@ -4,6 +4,7 @@ interface Props {}
 /**
  *
  * @todo v1 get a logo
+ * @todo make menu items on large screen space between.
  */
 const Nav = () => {
   return (
@@ -44,7 +45,7 @@ const Nav = () => {
         </div>
       </div>
       <div className='hidden navbar-center lg:flex'>
-        <ul className='p-0 menu menu-horizontal'>
+        <ul className='p-0 text-2xl menu menu-horizontal'>
           <li>
             <Link href='/#home'>Home</Link>
           </li>

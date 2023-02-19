@@ -10,7 +10,7 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <div className='flex'>
       <Sidebar />
-      <div>
+      <div className='overflow-x-clip'>
         <Navbar />
         <main>{children}</main>
         {/* <Footer /> */}

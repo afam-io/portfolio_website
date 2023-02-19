@@ -12,15 +12,15 @@ const About: NextPage = () => {
     <div
       className='flex flex-col min-h-screen lg:pt-16 lg:flex-row bg-base-200'
       id='about'>
-      <div className='xl:w-50% md:w-50% '>
+      <div className='lg:max-w-[50%]'>
         <Image
           src={PersonalImage}
           alt='picture of Afam website author'
-          className='object-cover w-full  lg:h-[95%] xl:w-auto xl:h-[95%]'
+          className='object-cover w-full lg:max-w-md lg:h-auto xl:w-auto xl:h-[95%]'
           //className='object-cover w-full lg: lg:max-h-[800px] xl:w-auto '
         />
       </div>
-      <section className='flex flex-col pl-3 md:pl-5 '>
+      <section className='flex flex-col pl-3 lg:max-w-[50%] md:pl-5 outline-2 outline-dashed outline-red-400'>
         <h2
           className='w-screen md:w-full leading-tight md:tracking-none
         md:pb-8 md:leading-none font-bold    text-center mt-4 pb-2  ml-[-1rem]'>
