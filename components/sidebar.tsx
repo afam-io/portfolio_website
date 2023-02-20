@@ -1,13 +1,13 @@
 import { SocialIcon } from 'react-social-icons';
 
 /**
- *
+ * @todo v3 make icons larger
  */
 
 const Sidebar = () => {
   return (
     <aside className='sticky top-0 hidden w-auto h-screen m-1 bg-primary dark:bg-base-200 lg:block '>
-      <div className='lg:pt-[25rem] flex flex-col lg:space-y-2 md:pt-[40rem]'>
+      <div className='flex flex-col space-y-4 pt-[70vh]'>
         <SocialIcon
           url='https://github.com/afam-io'
           fgColor='gray'
