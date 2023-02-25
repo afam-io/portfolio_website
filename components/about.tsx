@@ -10,9 +10,9 @@ import PersonalImage from '../public/images/afam_headshot_books_cropped.jpg';
 const About: NextPage = () => {
   return (
     <div
-      className='flex flex-col min-h-screen lg:pt-16 lg:flex-row bg-base-200'
+      className='flex flex-col min-h-screen lg:pt-16 lg:flex-row bg-base-200 outline-2 outline-dashed outline-green-400'
       id='about'>
-      <div className='lg:max-w-[50%]'>
+      <div className='lg:w-[50%]'>
         <Image
           src={PersonalImage}
           alt='picture of Afam website author'
