@@ -2,6 +2,12 @@ import Navbar from './navbar';
 import Footer from './footer';
 import Sidebar from './sidebar';
 
+/**
+ *
+ * @todo v3 add two sidebars
+ *@todo v3 add navbar links
+ *@todo v3 add footer links
+ */
 interface LayoutProps {
   children: React.ReactNode;
 }
